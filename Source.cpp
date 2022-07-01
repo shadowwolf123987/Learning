@@ -570,6 +570,31 @@ int main()
 }
 */
 
+#include <iostream>
+using namespace std;
+
+class Test
+{
+private:
+	static int count;
+public:
+	static void showInfo()
+	{
+		cout << Test::count << endl;
+	}
+
+
+};
+
+int Test::count = 10;
+
+int main()
+{
+
+	Test::showInfo();
+
+}
+
 /*
 #include <iostream>
 using namespace std;
